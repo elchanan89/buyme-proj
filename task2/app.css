@@ -1,0 +1,92 @@
+.form-control:focus {
+    border-color: #f6b220;
+	box-shadow: none;
+}
+
+label{
+	font-weight: 100 !important;
+}
+
+.form-control{
+	border-radius: 2px !important;
+}
+.custom-control-label:after{
+	background-color: #f6b220;
+}
+
+.custom-control-label:after, .custom-control-label:before{
+	right: -17px;
+	width: 1.2rem;
+	height: 1.2rem;
+	top: 0px;
+}
+
+
+@media screen and (max-width: 965px) {
+    #form {
+		margin: 45px 12% 20px 12% !important;
+    }
+
+}
+
+@media screen and (max-width: 965px){
+	.firstName {
+		flex: none;
+		margin-top:10px!important;
+	}
+}
+
+@media screen and (max-width: 965px){
+	.lastName {
+		flex: none;
+		margin-top:10px!important;
+	}
+}
+
+@font-face {
+	font-family: 'OpenSansHebrew-Regular';
+	src: URL('./Fonts/OpenSansHebrew-Regular.ttf') format('woff');
+}
+		
+.head{
+	background-color:#1d819c;
+	height: 20%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: -1;
+}
+
+#form{
+	direction: rtl;
+    margin: 100px 35% 20px 35%;
+    direction: rtl;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+	z-index: 1;
+    background: white;
+	font-family: 'OpenSansHebrew-Regular';
+}
+
+#headline{
+	margin-top:0; 
+	font-size:16px;
+}
+
+.labelUp{
+	float: right;
+}
+
+#loginBtn{
+	border-radius: 2px; 
+	background-color: #f6b220;
+	color: black;
+}
+
+.terms{
+	text-decoration: underline;
+	color:black;
+}
+
+.accept{
+	position: inherit;
+}
