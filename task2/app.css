@@ -106,7 +106,8 @@ body{
     border: 1px solid #ccc;
     padding : 4px 4px 4px 0;
 	width: 100%;
-	border-radius: 2px !important
+	border-radius: 2px !important;
+	font-family: 'OpenSansHebrew-Regular';
 }	
 
 .input:focus {
