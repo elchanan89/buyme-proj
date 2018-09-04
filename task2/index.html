@@ -4,48 +4,59 @@
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="externals/bootstrap-material-design.min.css">
-	<link rel="stylesheet" href="externals/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-	<div class='head'></div>
-	<form id='form' class="text-center border border-light p-5">
-		<p class="h4 mb-4" id='headline'>הרשמה לאתר</p>
+	<div class='head'>
+		<img src='./logo.png' class='logo'>
+	</div>
+	
+	<!-- Form section -->
+	<form id='form'>
+		<p id='headline'>הרשמה לאתר</p>
 		<hr>
-		<div class="form-row mb-4">
-			<div class="col firstName">
+		<div class="content grid-container">
+			<div class="person-name">
 			
 				<!-- First name -->
-				<label class='labelUp'>שם פרטי</label>
-				<input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">	
+				<label class='label-up'>שם פרטי</label>
+				<input type="text" class="input" placeholder="First name">	
 			</div>
-			<div class="col-0.5"></div>
-			<div class="col lastName">
+			<div class="mid-space"></div>
+			<div class="person-name">
 			
 				<!-- Last name -->
-				<label class='labelUp'>שם משפחה</label>
-				<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+				<label class='label-up'>שם משפחה</label>
+				<input type="text" class="input" placeholder="Last name">
 			</div>
 		</div>
 
 		<!-- E-mail -->
-		<label class='labelUp'>כתובת אימייל</label>
-		<input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="user@name.com">
-
+		<div class='content'>
+			<label class='label-up'>כתובת אימייל</label>
+			<input type="email" class="input" placeholder="user@name.com">
+		</div>
+		
 		<!-- Password -->
-		<label class='labelUp'>סיסמה</label>
-		<input type="password" id="defaultRegisterFormPassword" class="form-control" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-		<button id='loginBtn' class="btn btn-info my-4 btn-block" type="submit">הרשמה</button>
-		<div class="custom-control custom-checkbox">
-			<input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
-			<label class="custom-control-label accept" for="defaultChecked2"> אני מאשר ומסכים 
+		<div class='content'>
+			<label class='label-up'>סיסמה</label>
+			<input type="password" class="input">
+		</div>
+		
+		<!-- Login button -->
+		<button id='login-btn' type="submit">הרשמה</button>
+		
+		<!-- Accept terms: checkbox -->
+		<div class="checkbox">
+			<input type="checkbox" id="check" checked>
+			<label for="check"> אני מאשר ומסכים 
 				<a href='' class='terms'>לתנאי השימוש והתקנון</a>
-			</label>
+			</label>	
 		</div>
 	</form>
 </body>
 
 </html>
+ 
